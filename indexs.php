@@ -1,6 +1,7 @@
 <?php
 require_once("helper/config.php");
 
+
 $uri = isset($_GET['uri']) ? $_GET['uri'] : 'home';
 $uri=str_replace(".php","",$uri);
 $title = ucfirst($uri);
