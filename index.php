@@ -1,5 +1,6 @@
 <?php
 require_once("helper/config.php");
+require_once("helper/Database.php");
 
 
 $uri = isset($_GET['uri']) ? $_GET['uri'] : 'home';
