@@ -12,7 +12,7 @@ class Database
     public function Connection()
     {
         try {
-            $this->conn = new PDO('mysql:host=localhost;dbname=phpnews', 'root', '');
+            $this->conn = new PDO('mysql:host=localhost;dbname=phpnews', 'root', 'admin');
         } catch (PDOException $e) {
             echo "Error:" . $e->getMessage();
         }
@@ -126,6 +126,22 @@ class Database
         }catch(Exception $e){
             echo "Error:".$e->getMessage();
         }
+    }
+
+    public function  customQuery($query)
+    {
+        try {
+            $prepareStatement = $this->conn->prepare($query);
+            if ($prepareStatement) {
+                $prepareStatement->execute();
+                return $prepareStatement->fetchAll(PDO::FETCH_OBJ);
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            echo "Error:" . $e->getMessage();
+        }
+
     }
 
    
