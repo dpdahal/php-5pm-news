@@ -1,5 +1,7 @@
 <?php
 require_once("../helper/config.php");
+require_once("../helper/Database.php");
+
 
 if(!isset($_SESSION['is_login'])){
     $url =url('login');

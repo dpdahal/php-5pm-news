@@ -15,6 +15,16 @@ if(!function_exists("url")){
 }
 
 
+if(!function_exists("public_path")){
+    function public_path($path=""){
+        $docRoot=$_SERVER['DOCUMENT_ROOT'];
+        $project_name = "phpnews";
+        $path=trim($path,"/");
+        return $docRoot."/".$project_name."/public/".$path;
+    }
+}
+
+
 if(!function_exists("redirect_back")){
     function redirect_back(){
         $referer = $_SERVER['HTTP_REFERER'] ?? url();

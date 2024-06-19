@@ -66,7 +66,7 @@ if (!empty($_POST)) {
             <?php messages();?>
         </div>
         <div class="col-md-12">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="" method="post">
                 <div class="form-group mb-2">
                     <label for="name">Name:
                         <span class="text-danger"><?= $errors['name'] ?></span>
@@ -102,12 +102,7 @@ if (!empty($_POST)) {
 
                     </select>
                 </div>
-                <div class="form-group mb-2">
-                    <label for="image">Image:
-                        <span class="text-danger"><?= $errors['image'] ?></span>
-                    </label>
-                    <input type="file" name="image" class="form-control">
-                </div>
+
                 <div class="form-group mb-2">
                     <button class="btn btn-primary">Register</button>
                 </div>
