@@ -24,6 +24,20 @@
 
             </ul>
         </li><!-- End Components Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#components-news" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-newspaper"></i><span>News</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="components-news" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="<?= url('admin/manage-category') ?>">
+                        <i class="bi bi-circle"></i><span>Manage Category</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </li><!-- End Components Nav -->
 
 
     </ul>
