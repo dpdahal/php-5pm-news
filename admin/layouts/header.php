@@ -20,6 +20,7 @@
     <link href="<?= url('public/assets/vendor/bootstrap-icons/bootstrap-icons.css'); ?>" rel="stylesheet">
 
     <!-- Template Main CSS File -->
+    <link href="<?= url('public/ckeditor/contents.css'); ?>" rel="stylesheet">
     <link href="<?= url('public/assets/css/style.css'); ?>" rel="stylesheet">
 </head>
 

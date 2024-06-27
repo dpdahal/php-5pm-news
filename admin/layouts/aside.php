@@ -32,6 +32,8 @@
                 <li>
                     <a href="<?= url('admin/manage-category') ?>">
                         <i class="bi bi-circle"></i><span>Manage Category</span>
+                    </a> <a href="<?= url('admin/add-news') ?>">
+                        <i class="bi bi-circle"></i><span>Add News</span>
                     </a>
                 </li>
 

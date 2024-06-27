@@ -14,7 +14,10 @@
 <script src="<?= url('public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
 
 <!-- Template Main JS File -->
+<script src="<?= url('public/assets/js/jquery.js');?>"></script>
+<script src="<?= url('public/ckeditor/ckeditor.js');?>"></script>
 <script src="<?= url('public/assets/js/main.js');?>"></script>
+<script src="<?= url('public/assets/js/admin.js');?>"></script>
 
 </body>
 
