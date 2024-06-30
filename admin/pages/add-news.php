@@ -36,6 +36,21 @@ if (!empty($_POST)) {
 
     if(!array_filter($errors)){
         $data=$_POST;
+
+        if (!empty($_FILES['image']['name'])) {
+            $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+            $fileName = md5(microtime()) . ".$ext";
+            $uploadPath = public_path("news/$fileName");
+            if (!move_uploaded_file($_FILES['image']['tmp_name'], $uploadPath)) {
+                $errors['image'] = "Image Upload Failed";
+                redirect_back();
+            } else {
+                $data['image'] = '/public/news/' . $fileName;
+            }
+        }
+
+
+
         $data['posted_by']=$loginId;
         $db->Insert('news',$data);
         $_SESSION['success']="News Added Successfully";

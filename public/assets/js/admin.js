@@ -15,10 +15,18 @@ $(document).ready(function() {
 
     });
 
+    CKEDITOR.replace('summary', {
+        filebrowserUploadUrl: "http://localhost/phpnews/ckeditor-upload.php",
+        filebrowserUploadMethod: "form"
+    });
+
+
     CKEDITOR.replace('description', {
+        filebrowserUploadUrl: "http://localhost/phpnews/ckeditor-upload.php",
+        filebrowserUploadMethod: "form"
 
     });
-    CKEDITOR.replace('summary', {});
+
 
 
 
