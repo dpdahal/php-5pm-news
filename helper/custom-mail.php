@@ -16,8 +16,8 @@ function sendMail($to, $subject, $body)
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host = 'sandbox.smtp.mailtrap.io';                     //Set the SMTP server to send through
         $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-        $mail->Username = "b7d752359c748c";                     //SMTP username
-        $mail->Password = "3f6acf3db8507d";                               //SMTP password
+        $mail->Username = "b7d75235sdffsddsf9c748c";                     //SMTP username
+        $mail->Password = "3f6acf3ddfsfdsdfsb8507d";                               //SMTP password
 //        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
