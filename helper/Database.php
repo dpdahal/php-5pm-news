@@ -116,6 +116,7 @@ class Database
                 $criteria="*";
             }
             $sql="SELECT $criteria FROM $tableName WHERE $criteria=?";
+
             $prepareStatement=$this->conn->prepare($sql);
             if($prepareStatement){
                 $prepareStatement->execute([$bindValue]);

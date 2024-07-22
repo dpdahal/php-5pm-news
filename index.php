@@ -1,6 +1,8 @@
 <?php
 require_once("helper/config.php");
 require_once("helper/Database.php");
+require_once("vendor/autoload.php");
+require_once("helper/custom-mail.php");
 
 
 $uri = isset($_GET['uri']) ? $_GET['uri'] : 'home';
